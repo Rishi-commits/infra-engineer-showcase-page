@@ -12,24 +12,29 @@ const Index = () => {
   // This data would typically come from a CMS or API
   // Replace with your own information
   const personalData = {
-    name: "John Doe",
-    title: "DevOps Engineer & Cloud Architect",
+    name: "Rishabh Jain",
+    title: "Software Engineer",
     summary: "I build scalable infrastructure and automate deployment pipelines, helping companies streamline their operations and deliver software more efficiently.",
-    bio: `I'm a passionate DevOps engineer with over 5 years of experience designing, implementing, and managing cloud infrastructure and CI/CD pipelines. 
-
-I focus on creating reliable, secure, and efficient systems that enable development teams to deliver software faster and with higher quality. My approach combines infrastructure as code, containerization, and automation to solve complex operational challenges.
-
-My goal is to bridge the gap between development and operations, fostering a culture of collaboration and continuous improvement.`,
+    bio: `Results-driven Software Developer with 5+ years of experience in designing and implementing data-driven solutions. Adept at CI/CD pipelines, and DevOps automation. Proven expertise in managing services such as  assisting Solution Designers and IT Architects in problem-solving, and implementing Agile methodologies for efficient project execution. Strong knowledge of cloud concepts, cloud architecture, and deployment using Jenkins.`,
     tagline: "Building bridges between development and operations",
     resumeLink: "#", // Add your resume link here
     contactInfo: {
-      email: "john.doe@example.com",
-      linkedin: "https://linkedin.com/in/johndoe",
-      github: "https://github.com/johndoe",
+      email: "jain98187@gmail.com",
+      linkedin: "https://www.linkedin.com/in/rishabh-jain-b5836a136/",
+      github: "",
     },
   };
 
   const skillCategories = [
+    {
+          name: "Development",
+          skills: [
+            { name: "Java", level: 90 },
+            { name: "Spring Boot", level: 85 },
+            { name: "Microservices", level: 80 },
+            { name: "Kafka", level: 80 },
+          ],
+    },
     {
       name: "DevOps & Cloud",
       skills: [
@@ -44,8 +49,6 @@ My goal is to bridge the gap between development and operations, fostering a cul
       skills: [
         { name: "Jenkins", level: 90 },
         { name: "GitHub Actions", level: 85 },
-        { name: "Ansible", level: 75 },
-        { name: "Python", level: 80 },
       ],
     },
   ];
@@ -58,66 +61,57 @@ My goal is to bridge the gap between development and operations, fostering a cul
 
   const experiences = [
     {
-      title: "Senior DevOps Engineer",
-      company: "TechCorp Inc.",
-      period: "2021 - Present",
+      title: "Associate Projects",
+      company: "Cognizant Technology Solutions.",
+      period: "June 2022 - Present",
       description: [
-        "Led the migration of legacy infrastructure to Kubernetes, reducing deployment time by 70% and improving scalability.",
-        "Implemented GitOps workflows with ArgoCD, enabling continuous deployment with improved reliability and auditability.",
-        "Designed and implemented a multi-account AWS architecture following security best practices and compliance requirements."
+        "Developed and automated CI/CD pipelines using Jenkins and Apache Airflow to ensure seamless application deployment that reduced deployment time by 30%.",
+        "Implemented data pipelines and solutions, enhancing data processing efficiency by 20%.",
+        "Collaborated with IT Architects and Solution Designers to troubleshoot complex issues and optimize existing processes.",
+        "Migrated applications from Java 8 to Java 11, resulting in a 25% performance boost and reduced security vulnerabilities.",
+        "Led Agile sprints and ensured timely project delivery with adherence to Agile best practices."
       ],
-      technologies: ["Kubernetes", "AWS", "Terraform", "ArgoCD", "Prometheus", "Grafana"]
+      technologies: ["Java","Spring Boot", "GitHub", "Jenkins"]
     },
     {
-      title: "DevOps Engineer",
-      company: "Innovate Solutions",
-      period: "2018 - 2021",
+      title: "Senior Systems Engineer",
+      company: "Infosys",
+      period: "2019 - 2022",
       description: [
-        "Built CI/CD pipelines using Jenkins, reducing release cycles from weeks to days.",
-        "Implemented Infrastructure as Code using Terraform and AWS CloudFormation.",
-        "Set up monitoring and alerting systems using Prometheus and Grafana, improving system reliability."
+        "Enhanced real-time data processing by transitioning from JMS to Kafka, resulting in a 40% reduction in latency and a 30% increase in throughput.",
+        "Improved security by 25% and reduced reliance on third-party services by 40% by migrating the application to Azure VM, ensuring better control over on-premises server management.",
+        "Streamlined application integration by re-architecting from EJB to Spring Boot, eliminating dependency on third-party JCA adapters, which increased system reliability by 30% and reduced integration issues by 50%."
       ],
-      technologies: ["Jenkins", "AWS", "Terraform", "Docker", "Prometheus", "Bash"]
-    },
-    {
-      title: "Systems Administrator",
-      company: "Data Systems LLC",
-      period: "2016 - 2018",
-      description: [
-        "Managed on-premises Linux servers and virtualization platforms.",
-        "Automated routine operational tasks using Bash and Python scripts.",
-        "Implemented backup and disaster recovery solutions, improving data security."
-      ],
-      technologies: ["Linux", "VMware", "Bash", "Python", "Backup Solutions"]
+      technologies: ["Jenkins", "MS Azure", "Java", "Spring Boot", "Kafka"]
     },
   ];
 
   const education = [
     {
-      degree: "B.S. in Computer Science",
-      institution: "University of Technology",
-      year: "2012 - 2016",
+      degree: "B.E. in Computer Science",
+      institution: "Solapur University",
+      year: "2015 - 2019",
       description: "Focus on distributed systems and network security"
     }
   ];
 
   const certifications = [
     {
-      name: "AWS Certified DevOps Engineer Professional",
+      name: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
+      year: "2024",
+      link: "#"
+    },
+    {
+      name: "Microsoft Certified: Azure fundamentals",
+      issuer: "Microsoft",
       year: "2021",
       link: "#"
     },
     {
-      name: "Certified Kubernetes Administrator (CKA)",
-      issuer: "Cloud Native Computing Foundation",
+      name: "Infosys certified Global Agile developer",
+      issuer: "Infosys",
       year: "2020",
-      link: "#"
-    },
-    {
-      name: "Terraform Associate",
-      issuer: "HashiCorp",
-      year: "2019",
       link: "#"
     }
   ];
