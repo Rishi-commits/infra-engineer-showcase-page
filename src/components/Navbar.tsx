@@ -36,6 +36,19 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleContactClick = () => {
+    // Close mobile menu if open
+    if (isOpen) {
+      setIsOpen(false);
+    }
+    
+    // Scroll to contact section
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header
       className={cn(
@@ -64,7 +77,12 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
-            <Button className="ml-4 bg-devops-accent hover:bg-devops-accent/90">Contact Me</Button>
+            <Button 
+              className="ml-4 bg-devops-accent hover:bg-devops-accent/90"
+              onClick={handleContactClick}
+            >
+              Contact Me
+            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -93,7 +111,10 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
-            <Button className="bg-devops-accent hover:bg-devops-accent/90 mt-2">
+            <Button 
+              className="bg-devops-accent hover:bg-devops-accent/90 mt-2"
+              onClick={handleContactClick}
+            >
               Contact Me
             </Button>
           </div>

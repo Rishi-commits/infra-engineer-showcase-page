@@ -10,6 +10,13 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ name, title, summary, resumeLink }: HeroSectionProps) => {
+  const handleContactClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="min-h-[90vh] flex flex-col justify-center bg-grid relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/95 to-background"></div>
@@ -34,7 +41,7 @@ const HeroSection = ({ name, title, summary, resumeLink }: HeroSectionProps) => 
           </p>
           
           <div className="flex flex-wrap gap-4 animate-fade-in opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-            <Button size="lg" className="bg-devops-accent hover:bg-devops-accent/90">
+            <Button size="lg" className="bg-devops-accent hover:bg-devops-accent/90" onClick={handleContactClick}>
               Contact Me
             </Button>
             <Button size="lg" variant="outline" asChild>
